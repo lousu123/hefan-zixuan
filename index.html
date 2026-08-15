@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>禾范自选食堂 · 盒饭自选食堂全案运营方案</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f7f4f0;color:#2d2d2d;line-height:1.8}
+.cover{background:linear-gradient(135deg,#c0392b 0%,#e67e22 100%);color:#fff;padding:55px 24px;text-align:center;position:relative;overflow:hidden}
+.cover::before{content:'';position:absolute;top:-50px;right:-50px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,0.06)}
+.cover::after{content:'';position:absolute;bottom:-70px;left:-70px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,0.05)}
+.cover .tag{display:inline-block;background:rgba(255,255,255,0.2);padding:6px 20px;border-radius:50px;font-size:13px;letter-spacing:2px;margin-bottom:20px}
+.cover h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;margin-bottom:8px;letter-spacing:2px}
+.cover .sub{font-size:16px;opacity:.92;margin-bottom:16px}
+.cover .meta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.cover .meta span{background:rgba(255,255,255,0.15);padding:6px 16px;border-radius:8px;font-size:13px}
+.container{max-width:1000px;margin:0 auto;padding:0 20px}
+.section{padding:45px 0}
+.section-title{font-size:clamp(1.4rem,3vw,1.8rem);font-weight:700;color:#c0392b;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.section-subtitle{color:#999;font-size:14px;margin-bottom:30px;padding-bottom:14px;border-bottom:2px solid #f0e0d5}
+.card{background:#fff;border-radius:14px;padding:24px;margin-bottom:18px;box-shadow:0 2px 16px rgba(0,0,0,0.05);border-left:4px solid #e67e22}
+.card h3{font-size:1.1rem;font-weight:600;color:#c0392b;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.card h3 .badge{background:#e67e22;color:#fff;font-size:10px;padding:2px 10px;border-radius:20px;font-weight:400}
+.card p{color:#555;margin-bottom:6px;font-size:14.5px}
+.card ul{list-style:none;padding:0}
+.card ul li{padding:6px 0 6px 22px;position:relative;color:#555;font-size:14.5px;border-bottom:1px dashed #f0ebe5}
+.card ul li:last-child{border-bottom:none}
+.card ul li::before{content:'•';position:absolute;left:5px;color:#e67e22;font-weight:700}
+.card ul li strong{color:#2c2c2c}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.highlight-box{background:linear-gradient(135deg,#fdf6ef,#fef0e6);border-radius:12px;padding:20px;margin:16px 0;border:1px solid #f0d5c0}
+.highlight-box h4{color:#c0392b;font-size:0.95rem;margin-bottom:6px}
+.highlight-box p{color:#666;font-size:14px}
+.pos-card{background:linear-gradient(135deg,#fff8f3,#fff);border:1px solid #fde0d0;border-radius:12px;padding:16px 18px;margin:14px 0}
+.pos-card .pos-title{font-size:14px;font-weight:600;color:#c0392b;margin-bottom:6px}
+.pos-card p{font-size:13.5px;color:#555}
+.price-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.price-table th{background:#c0392b;color:#fff;padding:10px 14px;text-align:left;font-weight:500}
+.price-table td{padding:9px 14px;border-bottom:1px solid #eee}
+.price-table tr:nth-child(even){background:#fdf9f6}
+.price-table .total{font-weight:700;background:#fef0e6!important}
+.warning-box{background:#fff8e6;border-left:4px solid #f5a623;padding:14px 18px;border-radius:0 8px 8px 0;margin:14px 0;font-size:13.5px;color:#7a5a30}
+.tag{display:inline-block;background:#fbe8dd;color:#c0392b;padding:2px 12px;border-radius:20px;font-size:11px;margin-right:6px;margin-bottom:4px}
+.footer-bar{background:#c0392b;color:rgba(255,255,255,0.85);text-align:center;padding:28px 20px;font-size:13px}
+.footer-bar strong{color:#ffd76a}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0}
+.quick-item{background:#fff;border-radius:12px;padding:16px 12px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.04);border-top:3px solid #e67e22}
+.quick-item .num{font-size:1.5rem;font-weight:800;color:#c0392b}
+.quick-item .label{font-size:12px;color:#999;margin-top:2px}
+@media(max-width:768px){.two-col{grid-template-columns:1fr}.section{padding:35px 0}.card{padding:18px}.quick-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="tag">🏥 医院商圈 · 盒饭自选食堂</div>
+  <h1>禾范自选食堂</h1>
+  <div class="sub">—— 盒饭 · 自选食堂 全案运营方案 ——</div>
+  <div class="meta">
+    <span>📍 肿瘤医院滨海医院南侧</span>
+    <span>🍱 盒饭 · 自选食堂</span>
+    <span>💳 美团智能版收银</span>
+    <span>📅 2026年8月</span>
+  </div>
+</div>
+<div class="container">
+
+<div class="section">
+  <div class="section-title">📋 零、门店信息速览</div>
+  <div class="section-subtitle">一页看懂这家店</div>
+  <div class="quick-grid">
+    <div class="quick-item"><div class="num">15-25元</div><div class="label">人均客单</div></div>
+    <div class="quick-item"><div class="num">150-250</div><div class="label">日均客流(人)</div></div>
+    <div class="quick-item"><div class="num">9-15万</div><div class="label">预估月营收(元)</div></div>
+    <div class="quick-item"><div class="num">2-4月</div><div class="label">预估回本周期</div></div>
+  </div>
+  <div class="card">
+    <h3>🏪 门店画像</h3>
+    <ul>
+      <li><strong>店名：</strong>禾范自选食堂</li>
+      <li><strong>位置：</strong>肿瘤医院滨海医院南侧（医院正对面/紧邻）</li>
+      <li><strong>形式：</strong>盒饭外带 + 堂食自选双模式</li>
+      <li><strong>核心客群：</strong>患者家属/陪护 60% · 医护人员 25% · 周边居民上班族 15%</li>
+      <li><strong>高峰期：</strong>午市 11:00-13:00、晚市 17:00-19:00（医院用餐时间集中）</li>
+      <li><strong>经营关键词：</strong>干净卫生 · 出餐快 · 性价比 · 稳定复购</li>
+    </ul>
+  </div>
+  <div class="highlight-box">
+    <h4>💡 一句话定位</h4>
+    <p>「医院门口的干净食堂」—— 现炒现做、荤素自由搭配、5秒结账，让家属吃得安心、医生吃得省心。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">📌 一、位置与客群分析</div>
+  <div class="section-subtitle">医院对面 = 刚需高频流量，抓住三类人</div>
+  <div class="card">
+    <h3>📍 位置画像</h3>
+    <p><strong>肿瘤医院滨海医院南侧</strong>——天然的人流枢纽，三大核心客群：</p>
+    <ul>
+      <li><strong>患者家属/陪护：</strong>长期在院陪护，一日三餐刚需，最看重<strong>干净卫生、性价比、方便快捷</strong>。住一周以上的占大头，是复购主力。</li>
+      <li><strong>医护人员：</strong>换班时间集中（11:00、17:00前后），<strong>出餐要快</strong>，认准稳定口味，消费能力强且稳定。</li>
+      <li><strong>周边上班族/居民：</strong>午晚两餐解决工作餐，自选食堂荤素自由搭配有吸引力。</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>🎯 客群需求拆解</h3>
+    <table class="price-table">
+      <tr><th>客群</th><th>核心需求</th><th>决策点</th><th>对应策略</th></tr>
+      <tr><td>患者家属/陪护</td><td>干净·实惠·营养</td><td>看得见的卫生</td><td>明档现炒+餐具消毒展示</td></tr>
+      <tr><td>医护人员</td><td>快·稳定·不纠结</td><td>出餐速度</td><td>预点餐+快速通道+固定套餐</td></tr>
+      <tr><td>上班族/居民</td><td>自由搭配·性价比</td><td>菜品种类</td><td>自选称重+每日换菜</td></tr>
+    </table>
+  </div>
+  <div class="pos-card">
+    <div class="pos-title">📟 收银怎么接住这些客流？</div>
+    <p>医院客流「来得急、走得快」——美团智能版收银双屏+快速结算，每单3-5秒，高峰期不卡队；称重模式自动计价，不用逐份算钱。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">🍱 二、产品结构 · 自选+盒饭双模式</div>
+  <div class="section-subtitle">荤素自由选，堂食外带两条腿走路</div>
+  <div class="two-col">
+    <div class="card">
+      <h3>🥗 堂食自选区（按份计价）</h3>
+      <ul>
+        <li><strong>素菜：</strong>¥3-4元/份（土豆丝、清炒时蔬、麻婆豆腐等）</li>
+        <li><strong>半荤：</strong>¥5-6元/份（番茄炒蛋、青椒肉丝、木须肉等）</li>
+        <li><strong>荤菜：</strong>¥8-10元/份（红烧肉、宫保鸡丁、糖醋里脊等）</li>
+        <li><strong>硬菜：</strong>¥12-15元/份（红烧鱼、炖排骨、回锅肉、把子肉等）</li>
+        <li><strong>汤/粥：</strong>免费例汤 + 收费粥品¥2-3元</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>📦 盒饭套餐（外带主力）</h3>
+      <ul>
+        <li><strong>经济套餐：</strong>1荤1素+米饭 <strong>¥15</strong></li>
+        <li><strong>标准套餐：</strong>2荤1素+米饭+例汤 <strong>¥20</strong></li>
+        <li><strong>丰盛套餐：</strong>2荤2素+米饭+汤 <strong>¥25</strong></li>
+        <li><strong>医护专享：</strong>3荤1素+米饭+汤 <strong>¥22</strong>（凭工牌，锁医护）</li>
+      </ul>
+    </div>
+  </div>
+  <div class="highlight-box">
+    <h4>💡 产品策略</h4>
+    <p>① 医院客群最在意<strong>干净卫生</strong>——明档现炒、餐具消毒展示、每日公示食材来源；<br>
+    ② 每天推<strong>1-2款特价菜</strong>（¥5-6元）吸引客流，带动其他消费；<br>
+    ③ 每周<strong>更新菜单</strong>（周一鱼香肉丝日、周三红烧肉日…）制造期待感；<br>
+    ④ 米饭可免费续，小细节拉满好感，家属会主动帮你宣传。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">💴 三、定价策略 · 271法则</div>
+  <div class="section-subtitle">引流款带流量，利润款赚利润，形象款立口碑</div>
+  <div class="card">
+    <table class="price-table">
+      <tr><th>类型</th><th>产品</th><th>定价</th><th>作用</th></tr>
+      <tr><td>🔥 引流款</td><td>单人工作餐（1荤1素+米饭）</td><td>¥9.9</td><td>冲量、拉新、抢医院流量</td></tr>
+      <tr><td>💎 利润款</td><td>标准盒饭（2荤1素+汤）</td><td>¥18-20</td><td>主力走量款，毛利最高</td></tr>
+      <tr><td>💎 利润款</td><td>双人自选餐（2荤2素×2）</td><td>¥35</td><td>家属结伴用餐场景</td></tr>
+      <tr><td>👑 形象款</td><td>营养全家桶（3荤3素+汤+水果）</td><td>¥48</td><td>住院家庭/多人拼餐，拉客单</td></tr>
+    </table>
+  </div>
+  <div class="pos-card">
+    <div class="pos-title">📟 收银端定价落地</div>
+    <p>团购券（9.9工作餐）扫码即核销；会员储值自动打折；每日特价菜在收银端一键切换——价格策略全部由系统管理，不用人工记。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">💳 四、美团智能版收银 · 核心部署</div>
+  <div class="section-subtitle">自选食堂高峰结算快，收银就是命脉</div>
+  <div class="card">
+    <h3>📋 硬件配置方案 <span class="badge">美团智能版</span></h3>
+    <ul>
+      <li><strong>双屏收银机×1：</strong>自选餐台结算，客显屏同步金额，扫码即付，家属不用掏钱包</li>
+      <li><strong>称重模式：</strong>自选称重菜品自动计价（支持按克结算），不用逐个算价</li>
+      <li><strong>档口模式：</strong>素菜/荤菜/主食分档口出票，后厨按单补菜，不跑单</li>
+      <li><strong>快速结算：</strong>预置常用组合一键结账（如「标准盒饭20」一键），高峰每单<strong>3-5秒</strong></li>
+      <li><strong>团购核销：</strong>点评/美团券扫一下即核销，不用人工登记小本子</li>
+      <li><strong>外卖接单：</strong>自动接单+后厨出票，医院周边3公里配送不丢单</li>
+    </ul>
+  </div>
+  <div class="pos-card">
+    <div class="pos-title">📟 为什么盒饭自选食堂必须用美团收银？</div>
+    <p>① 高峰几十人排队，结算慢一单就丢一单——双屏快速结算不卡队<br>
+    ② 盒饭外带+堂食自选+外卖三线并行，一机全管<br>
+    ③ 每天营收、菜品销量、损耗数据自动生成，月底不用对账<br>
+    ④ 未来接医院团餐/预定盒饭，系统直接管理订单<br>
+    ⑤ 美团生态打通：团购券、外卖单、会员储值一个后台全看</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">🎫 五、团购套餐设计</div>
+  <div class="section-subtitle">线上引流，把医院流量变成到店客流</div>
+  <div class="card">
+    <table class="price-table">
+      <tr><th>套餐</th><th>内容</th><th>价格</th><th>定位</th></tr>
+      <tr><td>🔥 引流款</td><td>单人工作餐（1荤1素+米饭+例汤）</td><td>¥9.9（原价15）</td><td>冲销量榜，拉新客</td></tr>
+      <tr><td>💎 主力款</td><td>标准盒饭（2荤1素+汤）</td><td>¥16.9（原价20）</td><td>日常走量主力</td></tr>
+      <tr><td>👥 双人餐</td><td>双人自选（2荤2素+2米饭+汤）</td><td>¥32.9（原价40）</td><td>家属拼餐场景</td></tr>
+      <tr><td>💰 囤货款</td><td>5次盒饭卡（每次2荤1素）</td><td>¥88</td><td>锁定长期复购</td></tr>
+    </table>
+  </div>
+  <div class="highlight-box">
+    <h4>📌 团购运营节奏</h4>
+    <p>开业首月主推<strong>9.9引流款</strong>冲销量榜（点评销量榜前3名会带来自然流量）→ 次月转向<strong>16.9主力款+88囤货款</strong>提毛利 → 稳定期用<strong>双人餐</strong>拉客单。</p>
+  </div>
+  <div class="pos-card">
+    <div class="pos-title">📟 收银融合</div>
+    <p>顾客买团购券到店，收银端<strong>扫码即核销</strong>，自动记录核销数——哪些券卖得好、核销率多少，后台数据一目了然。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">🛵 六、外卖运营 · 医院场景特化</div>
+  <div class="section-subtitle">病房送到床，医护到点吃</div>
+  <div class="card">
+    <h3>📦 包装与体验</h3>
+    <ul>
+      <li><strong>锡纸盒+保温袋：</strong>保证送到病房还热乎（医院单最怕凉）</li>
+      <li><strong>餐具包：</strong>筷子、纸巾、湿巾齐全，汤单独密封</li>
+      <li><strong>小票暖心语：</strong>「祝早日康复」——医院场景的情感价值拉满</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>🛵 外卖策略</h3>
+    <ul>
+      <li><strong>满减：</strong>满20减4、满35减8（配合配送费优惠）</li>
+      <li><strong>配送范围：</strong>肿瘤医院及周边3公里，医院门口可设自提点</li>
+      <li><strong>预订单：</strong>医护换班高峰前提前备餐，到点即出（病房预点单模式）</li>
+      <li><strong>拼单场景：</strong>病区家属群拼单，5份起送（系统支持团餐单）</li>
+    </ul>
+  </div>
+  <div class="pos-card">
+    <div class="pos-title">📟 收银融合</div>
+    <p>外卖单<strong>自动接单、自动出票</strong>，后厨不落单；堂食+外卖+团购一个后台统一看，每日各渠道占比清清楚楚。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">💎 七、会员储值锁客</div>
+  <div class="section-subtitle">医院客群=长周期刚需，储值就是提前锁定</div>
+  <div class="card">
+    <h3>💰 储值方案</h3>
+    <table class="price-table">
+      <tr><th>客群</th><th>方案</th><th>说明</th></tr>
+      <tr><td>患者家属（长住）</td><td>充100送10 / 充200送30</td><td>陪护住一周以上的刚需</td></tr>
+      <tr><td>医护人员（稳定）</td><td>月度套餐 ¥400/月 每日一餐</td><td>相当于8折，锁医护长期消费</td></tr>
+      <tr><td>全员积分</td><td>消费1元积1分，100分抵¥5</td><td>无感积分，自动累积</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3>🎯 开卡话术（对客建议）</h3>
+    <ul>
+      <li>对家属：「您这一住至少一周，充100送10，顿顿省，还不用每次掏钱」</li>
+      <li>对医护：「您天天来，办个月卡每天省4块，一个月省100多」</li>
+      <li>对拼单：「几个家属一起充，凑200送30，大家AA更划算」</li>
+    </ul>
+  </div>
+  <div class="pos-card">
+    <div class="pos-title">📟 收银融合</div>
+    <p>买单时收银端<strong>自动提示「充值立减X元」</strong>，一键开卡；沉睡30天自动发券唤醒；储值余额、到期提醒全系统管理，不怕忘。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">🎊 八、开业活动方案</div>
+  <div class="section-subtitle">开业一炮而红，医院圈口口相传</div>
+  <div class="card">
+    <h3>🔥 开业7天活动</h3>
+    <table class="price-table">
+      <tr><th>时间</th><th>活动</th><th>目的</th></tr>
+      <tr><td>Day1-3</td><td>全场8折，每天前100名送卤蛋/饮料</td><td>引爆人气，制造排队</td></tr>
+      <tr><td>Day4-5</td><td>标准盒饭¥15→开业价¥9.9（限午市）</td><td>冲点评销量榜</td></tr>
+      <tr><td>Day6-7</td><td>储值狂欢：充100送15、充200送40</td><td>锁定长住客群</td></tr>
+      <tr><td>长期</td><td>医护凭工牌永久9折</td><td>锁定医护基本盘</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3>📢 地推+线上组合</h3>
+    <ul>
+      <li><strong>医院门口/病房楼：</strong>DM单发放，扫码领3元券（券自动进美团会员系统）</li>
+      <li><strong>陪护家属群：</strong>扫码进群，每日菜单提前发群里，可群内预定</li>
+      <li><strong>点评上线：</strong>新店装修+霸王餐5-8位（定向医院周边人群）</li>
+      <li><strong>持续运营：</strong>每周三「特价菜日」，每周五「加菜日」</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">⭐ 九、点评口碑运营</div>
+  <div class="section-subtitle">医院客群信口碑，点评星级就是信任状</div>
+  <div class="card">
+    <h3>📝 冲星级打法</h3>
+    <ul>
+      <li><strong>开店即入驻：</strong>新店7天流量扶持期，尽早完善门店信息（菜单图、环境图、资质）</li>
+      <li><strong>收藏打卡：</strong>收藏店铺+打卡送例汤/卤蛋（合规动作，替代「好评返现」）</li>
+      <li><strong>霸王餐：</strong>5-8个名额定向医院周边人群，产出带图好评</li>
+      <li><strong>差评处理：</strong>24小时内回复+补偿（一份免费餐），态度决定口碑</li>
+    </ul>
+  </div>
+  <div class="warning-box">
+    <strong>⚠️ 合规提醒：</strong><br>
+    ① 严禁「好评返现」「晒单返红包」——平台会处罚降权<br>
+    ② 用「收藏打卡送饮品」「拍照发圈送卤蛋」替代，同样有效且合规<br>
+    ③ 回复差评要真诚：先道歉→给方案→邀请再来
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">💰 十、预算规划</div>
+  <div class="section-subtitle">小投入大流量，钱花在刀刃上</div>
+  <div class="card">
+    <table class="price-table">
+      <tr><th>项目</th><th>费用（元）</th><th>备注</th></tr>
+      <tr><td>美团智能版收银系统</td><td>¥3,000-5,000</td><td>双屏机+软件，先软件后硬件可谈</td></tr>
+      <tr><td>点评入驻+霸王餐</td><td>¥1,000-2,000</td><td>新店引流必投</td></tr>
+      <tr><td>开业物料（横幅/DM/海报）</td><td>¥800-1,500</td><td>含医院门口地推物料</td></tr>
+      <tr><td>开业折扣让利</td><td>¥1,500-2,500</td><td>7天特价+储值赠送</td></tr>
+      <tr><td>外卖包装耗材</td><td>¥500-1,000/月</td><td>锡纸盒+保温袋</td></tr>
+      <tr><td>会员储值营销金</td><td>¥500-1,000</td><td>充值赠送成本分摊</td></tr>
+      <tr class="total"><td>首月运营总投入</td><td>¥6,800-12,000</td><td>一次性约¥5,300 + 月运营¥1,500+</td></tr>
+    </table>
+  </div>
+  <div class="highlight-box">
+    <h4>💡 省钱建议</h4>
+    <p>① 收银先付软件费，硬件款可谈分期——老板资金紧张也不耽误上线；<br>
+    ② DM单自己设计打印，物料费省一半；<br>
+    ③ 霸王餐用小份餐+例汤控制成本，效果不减。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">📈 十一、营收预估</div>
+  <div class="section-subtitle">算清楚账，老板才有信心</div>
+  <div class="card">
+    <table class="price-table">
+      <tr><th>指标</th><th>保守</th><th>乐观</th><th>测算依据</th></tr>
+      <tr><td>日均客流</td><td>150人</td><td>250人</td><td>医院周边刚需+外卖</td></tr>
+      <tr><td>人均消费</td><td>¥18</td><td>¥22</td><td>盒饭+自选混合</td></tr>
+      <tr><td>日均营收</td><td>¥2,700</td><td>¥5,500</td><td>午市为主+晚市+外卖</td></tr>
+      <tr><td>月营收</td><td>¥8.1万</td><td>¥16.5万</td><td>月均30天</td></tr>
+      <tr><td>月毛利(约55%)</td><td>¥4.5万</td><td>¥9.1万</td><td>餐饮常规毛利</td></tr>
+    </table>
+  </div>
+  <div class="highlight-box">
+    <h4>📌 关键结论</h4>
+    <p>月营收预估<strong>¥8-16万</strong>，改造投入约¥15-25万，预计<strong>2-4个月回本</strong>。医院商圈是「一次性投入、长期稳定回报」的好生意。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">⚔️ 十二、竞品分析</div>
+  <div class="section-subtitle">医院周边餐饮竞争格局</div>
+  <div class="card">
+    <table class="price-table">
+      <tr><th>竞品类型</th><th>特点</th><th>我们的优势</th></tr>
+      <tr><td>医院食堂</td><td>便宜但口味一般、排队久</td><td>菜品更丰富、出餐更快、环境更好</td></tr>
+      <tr><td>路边快餐摊</td><td>便宜但卫生存疑</td><td>明档现炒、看得见的卫生（核心差异）</td></tr>
+      <tr><td>沙县/黄焖鸡等连锁</td><td>标准化但选择单一</td><td>自选自由搭配、每日换菜</td></tr>
+      <tr><td>周边小炒店</td><td>现炒但贵、慢</td><td>性价比+速度，人均15-25元</td></tr>
+    </table>
+  </div>
+  <div class="highlight-box">
+    <h4>⚡ 差异化定位</h4>
+    <p>别人拼「便宜」，我们拼「<strong>干净+快+自由</strong>」：明档现炒给家属看得见的安心，5秒结算给医护抢出来的时间，自选称重给每个人自由搭配的快乐。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">🗓️ 十三、日常运营SOP</div>
+  <div class="section-subtitle">每天照着做，生意不乱套</div>
+  <div class="card">
+    <h3>☀️ 营业前（开店前1小时）</h3>
+    <ul>
+      <li>备菜检查：昨日销量TOP5菜品必备足量（看收银端数据）</li>
+      <li>试菜试味：特价菜、当日新品先尝后卖</li>
+      <li>设备检查：收银机、称重台、出票机开机测试</li>
+      <li>外卖平台：确认今日满减/活动已生效，预订单已排</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>🌞 午市高峰（11:00-13:00）</h3>
+    <ul>
+      <li>补菜节奏：荤菜存量低于1/3立即补，素菜看流速</li>
+      <li>结算动线：一人收银一人打包，排队超8人开第二条通道</li>
+      <li>盒饭预打包：10份以上预订单提前装盒保温</li>
+      <li>医护快速通道：出示工牌直接走快速结算口</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>🌙 营业后（收市1小时）</h3>
+    <ul>
+      <li>数据复盘：看收银端今日营收、菜品销量TOP10、损耗（数据看板）</li>
+      <li>明日备货：按今日销量+明日天气调整采购量</li>
+      <li>卫生收尾：明档、餐台、餐具消毒展示拍照存档</li>
+      <li>会员运营：沉睡会员发券、明日菜单发家属群</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">📅 十四、30天开业倒计时</div>
+  <div class="section-subtitle">每一步踩准，开业即爆</div>
+  <div class="card">
+    <h3>🔨 第1-2周 · 筹备期</h3>
+    <ul>
+      <li>装修收尾，预留收银系统网线/电源位</li>
+      <li>美团智能版收银安装调试（档口/称重/结算全流程测试）</li>
+      <li>菜单设计+定价确认（自选区+盒饭套餐）</li>
+      <li>食材供应链锁定（新鲜+稳定+可追溯）</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>📸 第3周 · 蓄水期</h3>
+    <ul>
+      <li>门头招牌+围挡海报上墙（预告开业，放「开业9.9」钩子）</li>
+      <li>大众点评店铺入驻+团购上线（先挂9.9引流款）</li>
+      <li>陪护家属群/医护群开始蓄水（发装修进度+菜单预告）</li>
+      <li>医院门口DM单首轮发放（扫码进群领3元券）</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>🎉 第4周 · 试营业+开业</h3>
+    <ul>
+      <li>试营业2天（邀请周边居民+群内种子用户，磨合流程）</li>
+      <li><strong>正式开业：</strong>7天活动启动+储值推广+冲点评热门</li>
+      <li>每日复盘：菜品销量、损耗、评价反馈（用数据说话）</li>
+    </ul>
+  </div>
+  <div class="warning-box">
+    <strong>⚠️ 关键提醒：</strong><br>
+    ① 医院客群对卫生极度敏感——后厨明档+餐具消毒展示是核心信任点<br>
+    ② 出餐速度决定排队转化——高峰时段后厨备菜提前量要够<br>
+    ③ 禁「好评返现」→ 用「收藏打卡送饮品」<br>
+    ④ 大众点评店名提前注册占位（防抢注）<br>
+    ⑤ 所有物料署名「策划：苏苏」
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">🛡️ 十五、风险预案 & 总结</div>
+  <div class="section-subtitle">把丑话说在前面，生意才能做长久</div>
+  <div class="card">
+    <h3>⚠️ 三大风险与对策</h3>
+    <ul>
+      <li><strong>风险1 · 客流波动：</strong>医院政策变化（如食堂改造）影响客流 → <strong>对策：</strong>外卖+周边小区两条腿，不单靠医院</li>
+      <li><strong>风险2 · 食品安全：</strong>医院周边监管严格，一出事全盘皆输 → <strong>对策：</strong>每日留样、索证索票、员工健康证上墙</li>
+      <li><strong>风险3 · 价格战：</strong>周边摊贩低价竞争 → <strong>对策：</strong>不打价格战，打「干净+快+服务」差异牌，用会员锁客</li>
+    </ul>
+  </div>
+  <div class="highlight-box">
+    <h4>🎯 方案总结 · 三步走</h4>
+    <p><strong>第一步 · 活下来：</strong>美团收银+9.9引流+团购上线，先把医院流量接住<br>
+    <strong>第二步 · 立起来：</strong>冲点评星级+储值锁客+外卖铺开，形成稳定基本盘<br>
+    <strong>第三步 · 强起来：</strong>医护月卡+家属群拼单+团餐预定，做成医院商圈第一食堂</p>
+  </div>
+  <div class="pos-card">
+    <div class="pos-title">🤝 合作建议</div>
+    <p>收银系统是这套方案的地基——<strong>先付软件费即可上线</strong>，硬件可谈分期，老板资金压力小。系统用起来后，团购核销、外卖接单、会员储值、数据看板四件事一台机器全搞定。</p>
+  </div>
+</div>
+
+<div class="footer-bar">
+  <p>🍱 禾范自选食堂 · 盒饭自选食堂全案运营方案</p>
+  <p style="margin-top:4px;">策划：<strong>苏苏</strong> | 美团智能版收银系统合作伙伴 | 2026年8月</p>
+</div>
+</div>
+</body>
+</html>
