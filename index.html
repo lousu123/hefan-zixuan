@@ -49,6 +49,18 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
 .quick-item .num{font-size:1.5rem;font-weight:800;color:#c0392b}
 .quick-item .label{font-size:12px;color:#999;margin-top:2px}
 @media(max-width:768px){.two-col{grid-template-columns:1fr}.section{padding:35px 0}.card{padding:18px}.quick-grid{grid-template-columns:repeat(2,1fr)}}
+
+@media print {
+  body{background:#fff}
+  .cover{page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .section{page-break-inside:auto}
+  .card,.highlight-box,.pos-card,.warning-box{page-break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h3,h4{page-break-after:avoid}
+  .card h3{page-break-after:avoid}
+  table{page-break-inside:avoid}
+  .footer-bar{page-break-before:avoid}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
 </style>
 </head>
 <body>
