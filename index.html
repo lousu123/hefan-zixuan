@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>禾范自选食堂 · 盒饭自选食堂全案运营方案</title>
+<title>禾范自选食堂 · 盒饭自选食堂 全案运营方案 V2.0</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f7f4f0;color:#2d2d2d;line-height:1.8}
-.cover{background:linear-gradient(135deg,#c0392b 0%,#e67e22 100%);color:#fff;padding:55px 24px;text-align:center;position:relative;overflow:hidden}
+.cover{background:linear-gradient(135deg,#1a5276 0%,#2e86c1 100%);color:#fff;padding:55px 24px;text-align:center;position:relative;overflow:hidden}
 .cover::before{content:'';position:absolute;top:-50px;right:-50px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,0.06)}
 .cover::after{content:'';position:absolute;bottom:-70px;left:-70px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,0.05)}
 .cover .tag{display:inline-block;background:rgba(255,255,255,0.2);padding:6px 20px;border-radius:50px;font-size:13px;letter-spacing:2px;margin-bottom:20px}
@@ -15,48 +15,55 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
 .cover .sub{font-size:16px;opacity:.92;margin-bottom:16px}
 .cover .meta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
 .cover .meta span{background:rgba(255,255,255,0.15);padding:6px 16px;border-radius:8px;font-size:13px}
+.cover .v2-badge{display:inline-block;background:#f1c40f;color:#1a5276;padding:4px 16px;border-radius:50px;font-size:12px;font-weight:700;margin-top:16px;letter-spacing:1px}
 .container{max-width:1000px;margin:0 auto;padding:0 20px}
 .section{padding:45px 0}
-.section-title{font-size:clamp(1.4rem,3vw,1.8rem);font-weight:700;color:#c0392b;margin-bottom:8px;display:flex;align-items:center;gap:10px}
-.section-subtitle{color:#999;font-size:14px;margin-bottom:30px;padding-bottom:14px;border-bottom:2px solid #f0e0d5}
-.card{background:#fff;border-radius:14px;padding:24px;margin-bottom:18px;box-shadow:0 2px 16px rgba(0,0,0,0.05);border-left:4px solid #e67e22}
-.card h3{font-size:1.1rem;font-weight:600;color:#c0392b;margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.card h3 .badge{background:#e67e22;color:#fff;font-size:10px;padding:2px 10px;border-radius:20px;font-weight:400}
+.section-title{font-size:clamp(1.4rem,3vw,1.8rem);font-weight:700;color:#1a5276;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.section-subtitle{color:#999;font-size:14px;margin-bottom:30px;padding-bottom:14px;border-bottom:2px solid #d6eaf8}
+.card{background:#fff;border-radius:14px;padding:24px;margin-bottom:18px;box-shadow:0 2px 16px rgba(0,0,0,0.05);border-left:4px solid #2e86c1}
+.card h3{font-size:1.1rem;font-weight:600;color:#1a5276;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.card h3 .badge{background:#2e86c1;color:#fff;font-size:10px;padding:2px 10px;border-radius:20px;font-weight:400}
 .card p{color:#555;margin-bottom:6px;font-size:14.5px}
 .card ul{list-style:none;padding:0}
 .card ul li{padding:6px 0 6px 22px;position:relative;color:#555;font-size:14.5px;border-bottom:1px dashed #f0ebe5}
 .card ul li:last-child{border-bottom:none}
-.card ul li::before{content:'•';position:absolute;left:5px;color:#e67e22;font-weight:700}
+.card ul li::before{content:'•';position:absolute;left:5px;color:#2e86c1;font-weight:700}
 .card ul li strong{color:#2c2c2c}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.highlight-box{background:linear-gradient(135deg,#fdf6ef,#fef0e6);border-radius:12px;padding:20px;margin:16px 0;border:1px solid #f0d5c0}
-.highlight-box h4{color:#c0392b;font-size:0.95rem;margin-bottom:6px}
-.highlight-box p{color:#666;font-size:14px}
-.pos-card{background:linear-gradient(135deg,#fff8f3,#fff);border:1px solid #fde0d0;border-radius:12px;padding:16px 18px;margin:14px 0}
-.pos-card .pos-title{font-size:14px;font-weight:600;color:#c0392b;margin-bottom:6px}
+.highlight-box{background:linear-gradient(135deg,#eaf2f8,#d6eaf8);border-radius:12px;padding:20px;margin:16px 0;border:1px solid #aed6f1}
+.highlight-box h4{color:#1a5276;font-size:0.95rem;margin-bottom:6px}
+.highlight-box p{color:#555;font-size:14px}
+.pos-card{background:linear-gradient(135deg,#eaf2f8,#fff);border:1px solid #aed6f1;border-radius:12px;padding:16px 18px;margin:14px 0}
+.pos-card .pos-title{font-size:14px;font-weight:600;color:#1a5276;margin-bottom:6px}
 .pos-card p{font-size:13.5px;color:#555}
 .price-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
-.price-table th{background:#c0392b;color:#fff;padding:10px 14px;text-align:left;font-weight:500}
+.price-table th{background:#1a5276;color:#fff;padding:10px 14px;text-align:left;font-weight:500}
 .price-table td{padding:9px 14px;border-bottom:1px solid #eee}
-.price-table tr:nth-child(even){background:#fdf9f6}
-.price-table .total{font-weight:700;background:#fef0e6!important}
+.price-table tr:nth-child(even){background:#f0f8ff}
+.price-table .total{font-weight:700;background:#d6eaf8!important}
 .warning-box{background:#fff8e6;border-left:4px solid #f5a623;padding:14px 18px;border-radius:0 8px 8px 0;margin:14px 0;font-size:13.5px;color:#7a5a30}
-.tag{display:inline-block;background:#fbe8dd;color:#c0392b;padding:2px 12px;border-radius:20px;font-size:11px;margin-right:6px;margin-bottom:4px}
-.footer-bar{background:#c0392b;color:rgba(255,255,255,0.85);text-align:center;padding:28px 20px;font-size:13px}
-.footer-bar strong{color:#ffd76a}
+.tag{display:inline-block;background:#d6eaf8;color:#1a5276;padding:2px 12px;border-radius:20px;font-size:11px;margin-right:6px;margin-bottom:4px}
+.footer-bar{background:#1a5276;color:rgba(255,255,255,0.85);text-align:center;padding:28px 20px;font-size:13px}
+.footer-bar strong{color:#f1c40f}
 .quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0}
-.quick-item{background:#fff;border-radius:12px;padding:16px 12px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.04);border-top:3px solid #e67e22}
-.quick-item .num{font-size:1.5rem;font-weight:800;color:#c0392b}
+.quick-item{background:#fff;border-radius:12px;padding:16px 12px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.04);border-top:3px solid #2e86c1}
+.quick-item .num{font-size:1.5rem;font-weight:800;color:#1a5276}
 .quick-item .label{font-size:12px;color:#999;margin-top:2px}
+.dim-card{background:#fff;border-radius:14px;padding:24px;margin-bottom:18px;box-shadow:0 2px 16px rgba(0,0,0,0.05);border-left:4px solid #27ae60}
+.dim-card h3{font-size:1.1rem;font-weight:600;color:#1e8449;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.dim-card ul{list-style:none;padding:0}
+.dim-card ul li{padding:6px 0 6px 22px;position:relative;color:#555;font-size:14.5px;border-bottom:1px dashed #e8f8f0}
+.dim-card ul li:last-child{border-bottom:none}
+.dim-card ul li::before{content:'✦';position:absolute;left:4px;color:#27ae60;font-weight:700}
+.dim-card ul li strong{color:#1e8449}
 @media(max-width:768px){.two-col{grid-template-columns:1fr}.section{padding:35px 0}.card{padding:18px}.quick-grid{grid-template-columns:repeat(2,1fr)}}
 
 @media print {
   body{background:#fff}
   .cover{page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .section{page-break-inside:auto}
-  .card,.highlight-box,.pos-card,.warning-box{page-break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .card,.highlight-box,.pos-card,.warning-box,.dim-card{page-break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   h3,h4{page-break-after:avoid}
-  .card h3{page-break-after:avoid}
   table{page-break-inside:avoid}
   .footer-bar{page-break-before:avoid}
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
@@ -73,8 +80,9 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
     <span>📍 肿瘤医院滨海医院南侧</span>
     <span>🍱 盒饭 · 自选食堂</span>
     <span>💳 美团智能版收银</span>
-    <span>📅 2026年8月</span>
+    <span>📅 2026年8月 · V2.0</span>
   </div>
+  <div class="v2-badge">🔄 V2.0 升级版 · 5大维度深度调整</div>
 </div>
 <div class="container">
 
@@ -105,6 +113,68 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
 </div>
 
 <div class="section">
+  <div class="section-title">🔄 调整篇 · 五维升级（V2.0）</div>
+  <div class="section-subtitle">基于实地反馈，从「通用方案」升级为「医院场景专属方案」</div>
+
+  <div class="dim-card">
+    <h3>① 客群策略：把「医护专享」做实</h3>
+    <p style="color:#666;margin-bottom:8px;font-size:14px">医护占比25%但时间极紧、对卫生挑剔——专属服务不是噱头，是刚需。</p>
+    <ul>
+      <li><strong>锁定「白大褂」：</strong>推行「医护凭工牌永久9折」，在11:00和17:00换班高峰设<strong>专属快速取餐口</strong>，医护来了直接走快速通道</li>
+      <li><strong>18元3荤1素套餐：</strong>医护专享套餐，定价¥18（原价¥22），用「不纠结」解决「没时间选菜」的问题</li>
+      <li><strong>预点餐系统：</strong>医护提前10分钟微信群点单，到店即取，不用排队（收银端预订单管理）</li>
+    </ul>
+  </div>
+
+  <div class="dim-card">
+    <h3>② 产品结构：强调「干净」与「营养」</h3>
+    <p style="color:#666;margin-bottom:8px;font-size:14px">患者家属对「食品安全」的敏感度远超普通食客——干净是核心竞争力。</p>
+    <ul>
+      <li><strong>可视化卫生：</strong>明档现炒+餐具消毒展示放在最显眼位置，每日公示<strong>食材来源</strong>（进货单上墙）、<strong>员工健康证</strong>上墙，让家属「看得见才放心」</li>
+      <li><strong>增加「病号饭」：</strong>针对术后/清淡饮食需求，推出<strong>无盐/少油定制餐</strong>（¥15-18）和<strong>营养炖汤</strong>（¥8-12），既能体现关怀，也能提高客单</li>
+      <li><strong>透明厨房直播：</strong>门口挂电视屏，实时直播后厨操作，信任感直接拉满</li>
+    </ul>
+  </div>
+
+  <div class="dim-card">
+    <h3>③ 动线效率：双模式物理分流</h3>
+    <p style="color:#666;margin-bottom:8px;font-size:14px">盒饭外带+堂食自选双模式并行，动线不分离=高峰期必崩。</p>
+    <ul>
+      <li><strong>物理隔离：</strong>门口设<strong>「外带取餐」快速窗口</strong>（拿了就走，不进店），内部设<strong>「堂食自选」动线</strong>（选菜→称重→结算→入座），两条线互不干扰</li>
+      <li><strong>收银双屏+称重模式：</strong>外带窗口扫码即走（已预付款的团购/月卡直接核销），堂食区称重自动计价，确保高峰期<strong>3-5秒结账</strong>，不留排队机会</li>
+      <li><strong>排队超8人：</strong>自动开第二条收银通道（收银系统支持双通道切换）</li>
+    </ul>
+  </div>
+
+  <div class="dim-card">
+    <h3>④ 外卖与复购：主打「病房场景」</h3>
+    <p style="color:#666;margin-bottom:8px;font-size:14px">住院部核心痛点：饭凉了、没胃口、家属来回跑太累。</p>
+    <ul>
+      <li><strong>保温包装：</strong>必须用<strong>锡纸盒+保温袋</strong>，确保送到病房热乎（普通塑料盒送过去凉了=差评）</li>
+      <li><strong>情感小票：</strong>打印「祝早日康复」「加油，一切都会好起来的」等暖心语——医院场景的情感价值极高，一条小票可能换一个忠实顾客</li>
+      <li><strong>储值锁定：</strong>重点推「充100送10」<strong>话术：「您住一周以上，顿顿省，还不用每次下楼跑」</strong>——锁定长期陪护家属是最稳的复购</li>
+      <li><strong>病区拼单：</strong>5份起送，家属群拼单免配送费，系统自动接单</li>
+    </ul>
+  </div>
+
+  <div class="dim-card">
+    <h3>⑤ 开业节奏：制造「排队效应」</h3>
+    <p style="color:#666;margin-bottom:8px;font-size:14px">医院门口不怕没人，怕的是别人不知道你「干净又便宜」。</p>
+    <ul>
+      <li><strong>Day1-3 全场8折+送卤蛋：</strong>制造排队效应，门口排队=最好的广告</li>
+      <li><strong>Day4-5 9.9元套餐冲榜：</strong>标准盒饭¥9.9冲点评销量榜，让医院周边的人一搜就知道</li>
+      <li><strong>Day6-7 储值锁客：</strong>充100送15、充200送40，趁开业人气旺锁定长住家属</li>
+      <li><strong>地推精准：</strong>直接去<strong>病房楼发DM单</strong>，或加入陪护群发每日菜单——这是最精准的获客渠道，成本最低</li>
+    </ul>
+  </div>
+
+  <div class="highlight-box">
+    <h4>💰 预算提醒</h4>
+    <p>首月总投入约<strong>¥6,800-12,000</strong>。收银先付软件费，硬件可分期；物料自己设计打印也能省一半。调整的核心就是 <strong>「更医院化」</strong>——把卫生做到极致，把效率提到最高，把情感融入细节。</p>
+  </div>
+</div>
+
+<div class="section">
   <div class="section-title">📌 一、位置与客群分析</div>
   <div class="section-subtitle">医院对面 = 刚需高频流量，抓住三类人</div>
   <div class="card">
@@ -120,14 +190,14 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
     <h3>🎯 客群需求拆解</h3>
     <table class="price-table">
       <tr><th>客群</th><th>核心需求</th><th>决策点</th><th>对应策略</th></tr>
-      <tr><td>患者家属/陪护</td><td>干净·实惠·营养</td><td>看得见的卫生</td><td>明档现炒+餐具消毒展示</td></tr>
-      <tr><td>医护人员</td><td>快·稳定·不纠结</td><td>出餐速度</td><td>预点餐+快速通道+固定套餐</td></tr>
+      <tr><td>患者家属/陪护</td><td>干净·实惠·营养</td><td>看得见的卫生</td><td>明档现炒+餐具消毒展示+食材公示</td></tr>
+      <tr><td>医护人员</td><td>快·稳定·不纠结</td><td>出餐速度</td><td>预点餐+快速通道+18元3荤1素套餐</td></tr>
       <tr><td>上班族/居民</td><td>自由搭配·性价比</td><td>菜品种类</td><td>自选称重+每日换菜</td></tr>
     </table>
   </div>
   <div class="pos-card">
     <div class="pos-title">📟 收银怎么接住这些客流？</div>
-    <p>医院客流「来得急、走得快」——美团智能版收银双屏+快速结算，每单3-5秒，高峰期不卡队；称重模式自动计价，不用逐份算钱。</p>
+    <p>医院客流「来得急、走得快」——美团智能版收银双屏+快速结算，每单3-5秒，高峰期不卡队；称重模式自动计价，不用逐份算钱；预订单提前出票，医护到店即取。</p>
   </div>
 </div>
 
@@ -151,13 +221,32 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
         <li><strong>经济套餐：</strong>1荤1素+米饭 <strong>¥15</strong></li>
         <li><strong>标准套餐：</strong>2荤1素+米饭+例汤 <strong>¥20</strong></li>
         <li><strong>丰盛套餐：</strong>2荤2素+米饭+汤 <strong>¥25</strong></li>
-        <li><strong>医护专享：</strong>3荤1素+米饭+汤 <strong>¥22</strong>（凭工牌，锁医护）</li>
+        <li><strong>医护专享：</strong>3荤1素+米饭+汤 <strong>¥18</strong>（凭工牌，快速通道专供）</li>
+      </ul>
+    </div>
+  </div>
+  <div class="two-col">
+    <div class="card">
+      <h3>🥣 病号饭（新增）</h3>
+      <ul>
+        <li><strong>无盐定制餐：</strong>¥15（术后/高血压饮食需求）</li>
+        <li><strong>少油营养餐：</strong>¥18（清淡饮食定制）</li>
+        <li><strong>营养炖汤：</strong>¥8-12（乌鸡汤/排骨汤/鸽子汤）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>📺 卫生可视化</h3>
+      <ul>
+        <li><strong>明档现炒展示台</strong>——现炒就是最好的信任</li>
+        <li><strong>餐具消毒柜开放展示</strong>——看得见的干净</li>
+        <li><strong>食材来源公示墙</strong>——进货单每日更新</li>
+        <li><strong>后厨实时直播屏</strong>——门口电视循环播放</li>
       </ul>
     </div>
   </div>
   <div class="highlight-box">
     <h4>💡 产品策略</h4>
-    <p>① 医院客群最在意<strong>干净卫生</strong>——明档现炒、餐具消毒展示、每日公示食材来源；<br>
+    <p>① 医院客群最在意<strong>干净卫生</strong>——明档现炒、餐具消毒展示、每日公示食材来源、后厨直播；<br>
     ② 每天推<strong>1-2款特价菜</strong>（¥5-6元）吸引客流，带动其他消费；<br>
     ③ 每周<strong>更新菜单</strong>（周一鱼香肉丝日、周三红烧肉日…）制造期待感；<br>
     ④ 米饭可免费续，小细节拉满好感，家属会主动帮你宣传。</p>
@@ -174,6 +263,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
       <tr><td>💎 利润款</td><td>标准盒饭（2荤1素+汤）</td><td>¥18-20</td><td>主力走量款，毛利最高</td></tr>
       <tr><td>💎 利润款</td><td>双人自选餐（2荤2素×2）</td><td>¥35</td><td>家属结伴用餐场景</td></tr>
       <tr><td>👑 形象款</td><td>营养全家桶（3荤3素+汤+水果）</td><td>¥48</td><td>住院家庭/多人拼餐，拉客单</td></tr>
+      <tr><td>🆕 关怀款</td><td>病号营养餐（无盐/少油定制+炖汤）</td><td>¥15-28</td><td>术后/清淡需求，提高客单+口碑</td></tr>
     </table>
   </div>
   <div class="pos-card">
@@ -194,6 +284,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
       <li><strong>快速结算：</strong>预置常用组合一键结账（如「标准盒饭20」一键），高峰每单<strong>3-5秒</strong></li>
       <li><strong>团购核销：</strong>点评/美团券扫一下即核销，不用人工登记小本子</li>
       <li><strong>外卖接单：</strong>自动接单+后厨出票，医院周边3公里配送不丢单</li>
+      <li><strong>双通道切换：</strong>排队超8人一键开第二收银通道，高峰期不卡队</li>
     </ul>
   </div>
   <div class="pos-card">
@@ -234,9 +325,9 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
   <div class="card">
     <h3>📦 包装与体验</h3>
     <ul>
-      <li><strong>锡纸盒+保温袋：</strong>保证送到病房还热乎（医院单最怕凉）</li>
+      <li><strong>锡纸盒+保温袋：</strong>保证送到病房还热乎（医院单最怕凉）——<strong>核心升级：必须用，不能用塑料盒替代</strong></li>
       <li><strong>餐具包：</strong>筷子、纸巾、湿巾齐全，汤单独密封</li>
-      <li><strong>小票暖心语：</strong>「祝早日康复」——医院场景的情感价值拉满</li>
+      <li><strong>小票暖心语：</strong>「祝早日康复」「加油，一切都会好起来的」——医院场景的情感价值拉满，一条小票换一个忠实顾客</li>
     </ul>
   </div>
   <div class="card">
@@ -261,7 +352,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
     <h3>💰 储值方案</h3>
     <table class="price-table">
       <tr><th>客群</th><th>方案</th><th>说明</th></tr>
-      <tr><td>患者家属（长住）</td><td>充100送10 / 充200送30</td><td>陪护住一周以上的刚需</td></tr>
+      <tr><td>患者家属（长住）</td><td>充100送10 / 充200送30</td><td>陪护住一周以上的刚需，话术：「您住一周以上，顿顿省，还不用每次下楼跑」</td></tr>
       <tr><td>医护人员（稳定）</td><td>月度套餐 ¥400/月 每日一餐</td><td>相当于8折，锁医护长期消费</td></tr>
       <tr><td>全员积分</td><td>消费1元积1分，100分抵¥5</td><td>无感积分，自动累积</td></tr>
     </table>
@@ -269,8 +360,8 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
   <div class="card">
     <h3>🎯 开卡话术（对客建议）</h3>
     <ul>
-      <li>对家属：「您这一住至少一周，充100送10，顿顿省，还不用每次掏钱」</li>
-      <li>对医护：「您天天来，办个月卡每天省4块，一个月省100多」</li>
+      <li>对家属：「您这一住至少一周，充100送10，顿顿省，还不用每次掏钱，也不用下楼跑」</li>
+      <li>对医护：「您天天来，办个月卡每天省4块，一个月省100多，还不用排队」</li>
       <li>对拼单：「几个家属一起充，凑200送30，大家AA更划算」</li>
     </ul>
   </div>
@@ -287,10 +378,10 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
     <h3>🔥 开业7天活动</h3>
     <table class="price-table">
       <tr><th>时间</th><th>活动</th><th>目的</th></tr>
-      <tr><td>Day1-3</td><td>全场8折，每天前100名送卤蛋/饮料</td><td>引爆人气，制造排队</td></tr>
+      <tr><td>Day1-3</td><td>全场8折，每天前100名送卤蛋/饮料</td><td>引爆人气，制造排队效应</td></tr>
       <tr><td>Day4-5</td><td>标准盒饭¥15→开业价¥9.9（限午市）</td><td>冲点评销量榜</td></tr>
       <tr><td>Day6-7</td><td>储值狂欢：充100送15、充200送40</td><td>锁定长住客群</td></tr>
-      <tr><td>长期</td><td>医护凭工牌永久9折</td><td>锁定医护基本盘</td></tr>
+      <tr><td>长期</td><td>医护凭工牌永久9折+快速通道</td><td>锁定医护基本盘</td></tr>
     </table>
   </div>
   <div class="card">
@@ -334,7 +425,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
       <tr><td>点评入驻+霸王餐</td><td>¥1,000-2,000</td><td>新店引流必投</td></tr>
       <tr><td>开业物料（横幅/DM/海报）</td><td>¥800-1,500</td><td>含医院门口地推物料</td></tr>
       <tr><td>开业折扣让利</td><td>¥1,500-2,500</td><td>7天特价+储值赠送</td></tr>
-      <tr><td>外卖包装耗材</td><td>¥500-1,000/月</td><td>锡纸盒+保温袋</td></tr>
+      <tr><td>外卖包装耗材</td><td>¥500-1,000/月</td><td>锡纸盒+保温袋（必须用，不能省）</td></tr>
       <tr><td>会员储值营销金</td><td>¥500-1,000</td><td>充值赠送成本分摊</td></tr>
       <tr class="total"><td>首月运营总投入</td><td>¥6,800-12,000</td><td>一次性约¥5,300 + 月运营¥1,500+</td></tr>
     </table>
@@ -373,7 +464,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
     <table class="price-table">
       <tr><th>竞品类型</th><th>特点</th><th>我们的优势</th></tr>
       <tr><td>医院食堂</td><td>便宜但口味一般、排队久</td><td>菜品更丰富、出餐更快、环境更好</td></tr>
-      <tr><td>路边快餐摊</td><td>便宜但卫生存疑</td><td>明档现炒、看得见的卫生（核心差异）</td></tr>
+      <tr><td>路边快餐摊</td><td>便宜但卫生存疑</td><td>明档现炒+后厨直播+食材公示，看得见的卫生（核心差异）</td></tr>
       <tr><td>沙县/黄焖鸡等连锁</td><td>标准化但选择单一</td><td>自选自由搭配、每日换菜</td></tr>
       <tr><td>周边小炒店</td><td>现炒但贵、慢</td><td>性价比+速度，人均15-25元</td></tr>
     </table>
@@ -402,7 +493,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
       <li>补菜节奏：荤菜存量低于1/3立即补，素菜看流速</li>
       <li>结算动线：一人收银一人打包，排队超8人开第二条通道</li>
       <li>盒饭预打包：10份以上预订单提前装盒保温</li>
-      <li>医护快速通道：出示工牌直接走快速结算口</li>
+      <li>医护快速通道：出示工牌直接走快速结算口，预点单到店即取</li>
     </ul>
   </div>
   <div class="card">
@@ -422,10 +513,11 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
   <div class="card">
     <h3>🔨 第1-2周 · 筹备期</h3>
     <ul>
-      <li>装修收尾，预留收银系统网线/电源位</li>
+      <li>装修收尾，预留收银系统网线/电源位，预留外带窗口物理隔离位</li>
       <li>美团智能版收银安装调试（档口/称重/结算全流程测试）</li>
-      <li>菜单设计+定价确认（自选区+盒饭套餐）</li>
+      <li>菜单设计+定价确认（自选区+盒饭套餐+病号饭+医护专享）</li>
       <li>食材供应链锁定（新鲜+稳定+可追溯）</li>
+      <li>后厨直播屏采购安装</li>
     </ul>
   </div>
   <div class="card">
@@ -434,21 +526,21 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
       <li>门头招牌+围挡海报上墙（预告开业，放「开业9.9」钩子）</li>
       <li>大众点评店铺入驻+团购上线（先挂9.9引流款）</li>
       <li>陪护家属群/医护群开始蓄水（发装修进度+菜单预告）</li>
-      <li>医院门口DM单首轮发放（扫码进群领3元券）</li>
+      <li>医院门口+病房楼DM单首轮发放（扫码进群领3元券）</li>
     </ul>
   </div>
   <div class="card">
     <h3>🎉 第4周 · 试营业+开业</h3>
     <ul>
-      <li>试营业2天（邀请周边居民+群内种子用户，磨合流程）</li>
+      <li>试营业2天（邀请周边居民+群内种子用户，磨合动线流程）</li>
       <li><strong>正式开业：</strong>7天活动启动+储值推广+冲点评热门</li>
       <li>每日复盘：菜品销量、损耗、评价反馈（用数据说话）</li>
     </ul>
   </div>
   <div class="warning-box">
     <strong>⚠️ 关键提醒：</strong><br>
-    ① 医院客群对卫生极度敏感——后厨明档+餐具消毒展示是核心信任点<br>
-    ② 出餐速度决定排队转化——高峰时段后厨备菜提前量要够<br>
+    ① 医院客群对卫生极度敏感——后厨明档+餐具消毒展示+食材公示+后厨直播=四重信任<br>
+    ② 出餐速度决定排队转化——外带窗口+堂食自选物理分流，高峰不卡队<br>
     ③ 禁「好评返现」→ 用「收藏打卡送饮品」<br>
     ④ 大众点评店名提前注册占位（防抢注）<br>
     ⑤ 所有物料署名「策划：苏苏」
@@ -462,15 +554,24 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
     <h3>⚠️ 三大风险与对策</h3>
     <ul>
       <li><strong>风险1 · 客流波动：</strong>医院政策变化（如食堂改造）影响客流 → <strong>对策：</strong>外卖+周边小区两条腿，不单靠医院</li>
-      <li><strong>风险2 · 食品安全：</strong>医院周边监管严格，一出事全盘皆输 → <strong>对策：</strong>每日留样、索证索票、员工健康证上墙</li>
+      <li><strong>风险2 · 食品安全：</strong>医院周边监管严格，一出事全盘皆输 → <strong>对策：</strong>每日留样、索证索票、员工健康证上墙、后厨直播</li>
       <li><strong>风险3 · 价格战：</strong>周边摊贩低价竞争 → <strong>对策：</strong>不打价格战，打「干净+快+服务」差异牌，用会员锁客</li>
     </ul>
   </div>
   <div class="highlight-box">
     <h4>🎯 方案总结 · 三步走</h4>
     <p><strong>第一步 · 活下来：</strong>美团收银+9.9引流+团购上线，先把医院流量接住<br>
-    <strong>第二步 · 立起来：</strong>冲点评星级+储值锁客+外卖铺开，形成稳定基本盘<br>
+    <strong>第二步 · 立起来：</strong>冲点评星级+储值锁客+外卖铺开+病号饭差异化，形成稳定基本盘<br>
     <strong>第三步 · 强起来：</strong>医护月卡+家属群拼单+团餐预定，做成医院商圈第一食堂</p>
+  </div>
+  <div class="highlight-box">
+    <h4>💡 V2.0升级核心</h4>
+    <p>从「通用食堂方案」升级为<strong>「医院场景专属方案」</strong>——<br>
+    ① 医护专享做实（快速通道+预点餐+18元套餐）<br>
+    ② 干净可视化（明档+消毒+食材公示+后厨直播四重信任）<br>
+    ③ 双模式物理分流（外带窗口+堂食自选互不干扰）<br>
+    ④ 病房场景外卖（锡纸盒+保温袋+情感小票）<br>
+    ⑤ 精准地推进病房（DM单发到陪护群）</p>
   </div>
   <div class="pos-card">
     <div class="pos-title">🤝 合作建议</div>
@@ -479,7 +580,7 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
 </div>
 
 <div class="footer-bar">
-  <p>🍱 禾范自选食堂 · 盒饭自选食堂全案运营方案</p>
+  <p>🍱 禾范自选食堂 · 盒饭自选食堂 全案运营方案 V2.0</p>
   <p style="margin-top:4px;">策划：<strong>苏苏</strong> | 美团智能版收银系统合作伙伴 | 2026年8月</p>
 </div>
 </div>
